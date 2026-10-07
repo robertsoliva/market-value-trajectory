@@ -1,0 +1,54 @@
+/opt/anaconda3/lib/python3.12/site-packages/google/cloud/bigquery/table.py:2082: UserWarning: BigQuery Storage module not found, fetch data with the REST endpoint instead.
+  warnings.warn(
+Pulling training data (shared with mv_trajectory_model_comparison.py)...
+
+=== Global SHAP importance (median model, 365d, n=30,000) ===
+  age                          0.1354
+  log_value                    0.1197
+  value_drawdown               0.0847
+  days_since_last_transfer     0.0596
+  comp_log_value_avg           0.0365
+  momentum_1yr                 0.0221
+  prior_season_minutes         0.0152
+  momentum_missing             0.0149
+  height_in_cm                 0.0106
+  minutes_share                0.0086
+  sub_position                 0.0059
+  foot                         0.0052
+  had_free_or_loan_365d        0.0046
+  prior_season_ga_per90        0.0029
+  had_paid_transfer_365d       0.0018
+  position                     0.0002
+  minutes_share_missing        0.0000
+
+=== Correlation flags among numeric features (|r| > 0.4) ===
+  age <-> value_drawdown: r=-0.611
+  log_value <-> comp_log_value_avg: r=0.404
+  log_value <-> prior_season_minutes: r=0.514
+  log_value <-> minutes_share: r=0.442
+  log_value <-> minutes_share_missing: r=-0.423
+  prior_season_minutes <-> minutes_share: r=0.911
+  prior_season_minutes <-> minutes_share_missing: r=-0.711
+  minutes_share <-> minutes_share_missing: r=-0.752
+  had_free_or_loan_365d <-> days_since_last_transfer: r=-0.530
+
+=== Player-specific SHAP breakdown, 365d ===
+Population average prediction: 1.086x
+This player's prediction: 0.816x
+  log_value                    value=18.683045008419857 SHAP=-0.2541  (pushes DOWN)
+  age                          value=23             SHAP=+0.0833  (pushes UP  )
+  value_drawdown               value=-0.325422400434628 SHAP=-0.0637  (pushes DOWN)
+  momentum_1yr                 value=-0.2076393647782445 SHAP=-0.0612  (pushes DOWN)
+  days_since_last_transfer     value=1200.0         SHAP=+0.0362  (pushes UP  )
+  comp_log_value_avg           value=13.256397651851344 SHAP=-0.0166  (pushes DOWN)
+  sub_position                 value=Attacking Midfield SHAP=-0.0154  (pushes DOWN)
+  momentum_missing             value=0              SHAP=-0.0100  (pushes DOWN)
+  prior_season_ga_per90        value=0.39179104477611937 SHAP=+0.0088  (pushes UP  )
+  height_in_cm                 value=186.0          SHAP=+0.0055  (pushes UP  )
+  had_free_or_loan_365d        value=0              SHAP=-0.0027  (pushes DOWN)
+  foot                         value=right          SHAP=+0.0024  (pushes UP  )
+  minutes_share                value=0.0            SHAP=+0.0018  (pushes UP  )
+  had_paid_transfer_365d       value=0              SHAP=+0.0005  (pushes UP  )
+  prior_season_minutes         value=1608.0         SHAP=-0.0002  (pushes DOWN)
+  position                     value=Attack         SHAP=+0.0000  (pushes UP  )
+  minutes_share_missing        value=1              SHAP=-0.0000  (pushes DOWN)

@@ -1,0 +1,14 @@
+
+Jude Bellingham — Attacking Midfield, age 23, TM value €130,000,000 as of 2026-06-05
+
+Peer cohort — exact age 23, position-mode=off:
+Season     n_players       Low      Base      High          Low €      Base €      High €
++1 season      19644      -17%      +14%      +67%   €108,333,333€147,727,273€216,666,667
++2 seasons     17730      -20%      +27%     +122%   €104,000,000€165,454,545€288,888,889
++3 seasons     15937      -23%      +33%     +161%   €100,000,000€173,333,333€339,130,435
+
+Transfer-fee overlay (+1 season, exact-age cohort — does the player's own next move involve a real fee, a free/loan move, or no transfer at all?):
+  Paid fee     n_players=2927  +0%/+33%/+114%  (€130,000,000/€173,333,333/€278,571,429)
+  Free/loan    n_players=4522  -22%/+0%/+50%  (€101,739,130/€130,000,000/€195,000,000)
+  No transfer  n_players=14895 -17%/+12%/+62%  (€108,333,333/€146,250,000/€211,250,000)
+

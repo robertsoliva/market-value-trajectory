@@ -1,0 +1,31 @@
+/opt/anaconda3/lib/python3.12/site-packages/google/cloud/bigquery/table.py:2082: UserWarning: BigQuery Storage module not found, fetch data with the REST endpoint instead.
+  warnings.warn(
+Pulling training data (~1.15M rows -- valuations + transfers + appearances + games, a few minutes)...
+1,151,750 rows after cleaning
+
+============================================================================
++1 season (365d, n=448,289)
+  Method                       low    base    high     cov    pin25    pin75
+  A empirical bucket         0.833   1.125   1.667     n/a      n/a      n/a
+  B quantile reg             0.618   0.788   1.042     n/a      n/a      n/a
+  C XGBoost                  0.653   0.833   0.996   49.7%   0.1546   0.1705
+  D LightGBM                 0.687   0.816   0.997   49.5%   0.1543   0.1701
+  E HistGB (sklearn)         0.655   0.860   0.953   49.6%   0.1547   0.1703
+
+============================================================================
++2 seasons (730d, n=380,670)
+  Method                       low    base    high     cov    pin25    pin75
+  A empirical bucket         0.800   1.286   2.222     n/a      n/a      n/a
+  B quantile reg             0.364   0.602   0.973     n/a      n/a      n/a
+  C XGBoost                  0.525   0.842   1.148   49.3%   0.2167   0.2290
+  D LightGBM                 0.522   0.770   0.954   49.1%   0.2160   0.2282
+  E HistGB (sklearn)         0.538   0.727   1.001   49.4%   0.2167   0.2289
+
+============================================================================
++3 seasons (1095d, n=322,791)
+  Method                       low    base    high     cov    pin25    pin75
+  A empirical bucket         0.778   1.375   2.667     n/a      n/a      n/a
+  B quantile reg             0.239   0.470   0.878     n/a      n/a      n/a
+  C XGBoost                  0.418   0.739   1.126   50.0%   0.2482   0.2591
+  D LightGBM                 0.504   0.807   0.923   49.8%   0.2473   0.2579
+  E HistGB (sklearn)         0.453   0.742   1.217   49.9%   0.2479   0.2589
